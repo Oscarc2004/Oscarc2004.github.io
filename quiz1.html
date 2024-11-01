@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué tipo de organizador eres?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¿Qué tipo de organizador eres?</h1>
+    </header>
+
+    <section class="section">
+        <p>Responde las siguientes preguntas para descubrir tu estilo de organización:</p>
+        
+        <!-- Preguntas del Quiz -->
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <label>1. ¿Cómo prefieres anotar tus tareas diarias?</label>
+            <select name="q1">
+                <option value="1">Listas en papel</option>
+                <option value="2">Notas digitales</option>
+                <option value="3">Todo en la memoria</option>
+                <option value="4">Me organizo según el momento</option>
+            </select>
+
+            <!-- Pregunta 2 -->
+            <label>2. ¿Con qué frecuencia revisas tus pendientes durante el día?</label>
+            <select name="q2">
+                <option value="1">Cada hora</option>
+                <option value="2">Varias veces</option>
+                <option value="3">Al inicio y fin del día</option>
+                <option value="4">Sólo cuando siento que lo necesito</option>
+            </select>
+
+            <!-- Pregunta 3 -->
+            <label>3. ¿Qué haces cuando te sientes abrumado con tareas?</label>
+            <select name="q3">
+                <option value="1">Hago una lista priorizada</option>
+                <option value="2">Tomo un descanso</option>
+                <option value="3">Me enfoco en lo que puedo hacer rápido</option>
+                <option value="4">Dejo todo para después</option>
+            </select>
+
+            <!-- Botón de Envío -->
+            <button type="button" onclick="calculateResult()">Enviar respuestas</button>
+        </form>
+
+        <!-- Sección de resultado -->
+        <div id="result" class="result">
+            <!-- Aquí aparecerá el resultado -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Potencia tu Productividad. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
