@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué herramienta de productividad es perfecta para ti?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¿Qué herramienta de productividad es perfecta para ti?</h1>
+    </header>
+
+    <section class="section">
+        <p>Responde las siguientes preguntas para descubrir cuál herramienta de productividad se adapta mejor a ti:</p>
+        
+        <!-- Preguntas del Quiz -->
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <label>1. ¿Cómo prefieres ver tus tareas?</label>
+            <select name="q1">
+                <option value="1">Listas simples</option>
+                <option value="2">Kanban (tarjetas y columnas)</option>
+                <option value="3">Calendarios</option>
+                <option value="4">Tareas en orden de prioridad</option>
+            </select>
+
+            <!-- Pregunta 2 -->
+            <label>2. ¿Trabajas más en equipo o de forma individual?</label>
+            <select name="q2">
+                <option value="1">En equipo</option>
+                <option value="2">Individualmente</option>
+                <option value="3">Ambos</option>
+            </select>
+
+            <!-- Pregunta 3 -->
+            <label>3. ¿Cuánto tiempo dedicas a organizar tus tareas cada día?</label>
+            <select name="q3">
+                <option value="1">Menos de 5 minutos</option>
+                <option value="2">5-15 minutos</option>
+                <option value="3">Más de 15 minutos</option>
+            </select>
+
+            <!-- Botón de Envío -->
+            <button type="button" onclick="calculateResult()">Enviar respuestas</button>
+        </form>
+
+        <!-- Sección de resultado -->
+        <div id="result" class="result">
+            <!-- Aquí aparecerá el resultado -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Potencia tu Productividad. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="quiz2.js"></script>
+</body>
+</html>
